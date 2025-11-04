@@ -1,0 +1,51 @@
+.item-content{
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    width: 80%;
+    top: 100%;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.item:hover .item-content{
+    top: 70%;
+}
+
+.lightBoxContaianer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightBox{
+    height: 70vh;
+    width: 50%;
+    background-image: url(../assets/images/portfolio-1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.lightBox i:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.lightBox i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
